@@ -1,0 +1,6 @@
+// Given a string, the objective is to find out if any character has occurance equal // to the occurance of all other remaining characters. For example:
+// input: AABC    output: TRUE
+// explanation: occurance of A = 2 which is equal to occurance of B + occurance of C
+// input: EEAABE output: TRUE
+// explanation: occurance of E = 3 => A (2) + B (1)
+// input: BAAEEED output: FALSE
