@@ -10,3 +10,13 @@ function getSum(a, b){
   }
   return a;
 }
+
+
+//Using recursive 
+
+function add(a, b){
+	if(b == 0){
+		return a;
+	}
+	return add(++a, --b);
+}
