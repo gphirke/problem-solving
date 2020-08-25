@@ -18,7 +18,7 @@ function countSetBits(n){
    return count;
 }
 
-function CountSetBitsFrom1toN(n){
+function countSetBitsFrom1toN(n){
    let numOfSetBits = 0;
    for(let i=1; i<=n; i++){
     numOfSetBits = numOfSetBits + countSetBit(toBinary(i));
