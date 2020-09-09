@@ -17,7 +17,7 @@ console.log("Using Array indexOf: "+ canAddUptoK_1([15, 10, 3, 7], 17));
 function canAddUptoK_2(arr, k){
     var obj = {};
     for(var i=0, len = arr.length; i<len; i++){
-       if(obj.hasOwnProperty(k - arr[i])){
+       if(obj[k - arr[i]]){
            return true
        }else{
            obj[arr[i]] = 1;
