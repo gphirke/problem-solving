@@ -5,6 +5,8 @@ function toBinary(n){
         n = Math.floor(n/2);
     }
     return binary;
+    //or second way is
+    // return (n).toString(2);
 }
 
 console.log(toBinary(7));
