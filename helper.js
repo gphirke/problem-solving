@@ -24,3 +24,15 @@ function isLetter(char){
 function isAlphaNumeric(char){
     return (char >= 'a' && char <= 'z') || (char >= 'A' && char <= 'Z') || (char >=0 && char <= 9);
 }
+
+function getNumberOfDigits(num){
+    var count = 1;
+    while(num && num > 9){
+        num = Math.floor(num/10);
+        ++count;
+    }
+    return count;
+}
+
+
+
