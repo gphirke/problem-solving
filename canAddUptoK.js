@@ -5,7 +5,8 @@
 
 function canAddUptoK_1(arr, k){
     for(var i=0, len = arr.length; i<len; i++){
-       if(arr.indexOf(k-arr[i]) > -1){
+       var indx = arr.indexOf(k-arr[i]);
+       if(arr.indexOf(indx) > -1 && indx != i){
            return true
        }
     }
