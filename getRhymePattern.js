@@ -1,7 +1,6 @@
 /*
  * The problem statement
- * 
- * Time Limit: 15min + 45min
+ *
  * 
  * We were working with rhyme schemes. To tell if the
  * two words rhyme, we have to compare their rhyme-
@@ -11,12 +10,12 @@
  * 
  * Vowel
  * A vowel is any of: `a`, `e`, `i`, `o`, `u` or `y`.
- * NOTE: we consider `​y`​ as a vowel too, as long as
+ * NOTE: we consider `y` as a vowel too, as long as
  * it is not at the start or end of a word. So, as an
- * example, the `y`​ in `rhythm`​ is considered a vowel
+ * example, the `y` in `rhythm` is considered a vowel
  * 
- * ​Rhyme-pattern​
- * A ​rhyme-pattern​ is a substring of a word such that:
+ * hyme-pattern
+ * A rhyme-pattern is a substring of a word such that:
  *   1. The word ends with that substring.
  *   2. The first letter of the substring is always a
  *       vowel.
@@ -27,25 +26,22 @@
  *       start of the substring must be a non-vowel.
  * 
  * For example,
- *  the rhyme-pattern​ of `star` would be `ar`,
- *  the rhyme-pattern​ of `rainbow` would be `ow`,
- *  the rhyme-pattern​ of `noise` would be `e`, 
- *  the rhyme-pattern​ of `sunny` would be `unny`,
- *  the rhyme-pattern​ of `s​pying​` would be `​ying​`, 
- *  and the rhyme-pattern​ of `​all​` would be `​all​`.
+ *  the rhyme-pattern of `star` would be `ar`,
+ *  the rhyme-pattern of `rainbow` would be `ow`,
+ *  the rhyme-pattern of `noise` would be `e`, 
+ *  the rhyme-pattern of `sunny` would be `unny`,
+ *  the rhyme-pattern of `spying` would be `ying`, 
+ *  and the rhyme-pattern of `all` would be `all`.
  * 
  * Input will:
  *  1. always be in lower case
  *  2. always have vowels
  *  3. have no other character than [a-z]
  * 
- * Task: you need to implement the function
- * `getRhymePattern` below to return the rhyme-pattern
- * as described.
  * 
- * [Bonus marks for good commenting, brevity, and modularity]
+ * 
  */
-
+//https://repl.it/@ganeshphirke/Rhyme-Pattern-JS#index.js
 function checkVowels(char, i, word) {
   var vowels = ['a', 'e', 'i', 'o', 'u'];
   var len = word.length;
