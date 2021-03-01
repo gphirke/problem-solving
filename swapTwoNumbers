@@ -1,0 +1,19 @@
+function swap(){ 
+  var a =2, b=3; 
+  a ^= b;
+  b ^= a;
+  a ^= b;
+  console.log("a "+ a + "\nb: " + b);
+}
+
+
+// 2 solution
+var a = 5, b =8;
+b = (function(a){ 
+    return a 
+}(a, a=b));
+
+document.write("a: " + a+ "  b:  "+ b);
+
+
+
