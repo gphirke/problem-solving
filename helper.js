@@ -14,6 +14,9 @@ console.log(toBinary(7));
 
 
 function isNumeric(char){
+    if (char == "") {
+        return false;
+    }
     return char >=0 && char <= 9;
 }
 
