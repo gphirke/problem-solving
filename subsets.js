@@ -24,3 +24,29 @@ subsets([1,2,3])
 
 //o/p: 
 [[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]
+
+
+
+// 2 solution
+
+function allsubSets(array, result = []) {
+    
+    var fork = function (i, arr) {
+        if (i === array.length) {
+            result.push(arr);
+            return;
+        }
+        fork(i + 1, arr.concat([array[i]]));
+        fork(i + 1, arr);
+    }
+    fork(0, []);
+    return result;
+}
+	
+console.log(allsubSets([1, 2, 3]));
+
+
+
+
+
+
